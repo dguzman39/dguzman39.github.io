@@ -3,51 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <meta name="description" content="Damian Guzman's portfolio showcasing projects, skills, and experience as an aspiring developer with expertise in Java, Python, C#, and more." />
+  <title>Damian Guzman Portfolio | Developer & Problem Solver</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Switch between dark and light modes" tabindex="0">
+    <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+    </svg>
+    <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun" style="display: none;">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </button>
 
-  <!-- Navbar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
+  <!-- Header Section -->
   <header class="hero">
-    <h1>Hello, I'm Damian Guzman</h1>
-    <p>Aspiring Web Developer & Designer</p>
-    <a class="button" href="projects.html">View My Work</a>
+    <div class="hero-content">
+      <h1>Damian Guzman</h1>
+      <p>Aspiring Developer | Passionate About Problem-Solving</p>
+      <div class="hero-buttons">
+        <a href="mailto:deg3901@gmail.com" class="btn">
+          <img src="img/mail-icon.png" alt="Email icon to contact Damian Guzman" loading="lazy" />
+          Contact Me
+        </a>
+        <a href="https://www.linkedin.com/in/damianeguzman/" target="_blank" class="btn">
+          <img src="img/linkedin-icon.png" alt="LinkedIn icon to view Damian Guzman's profile" loading="lazy" />
+          LinkedIn
+        </a>
+        <a href="https://drive.google.com/file/d/10cN5Iw3fvqH-5R7j9fdK-XjuVTpBvSDx/view?usp=sharing" target="_blank" class="btn">
+          <img src="img/resume-icon.png" alt="Resume icon to view on Google Drive" loading="lazy" />
+          My Resume
+        </a>     
+      </div>      
+    </div>
+    <!-- Chevron Down -->
+    <div class="chevron-down">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-8 h-8"><path d="m6 9 6 6 6-6"></path></svg>
+    </div>
   </header>
 
-  <!-- Featured Projects or Introduction -->
-  <section class="featured-projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <article class="project-card">
-        <img src="img/project1.png" alt="Project 1 screenshot" />
-        <h3>Project One</h3>
-        <p>Short description of the project</p>
-      </article>
-      <article class="project-card">
-        <img src="img/project2.png" alt="Project 2 screenshot" />
-        <h3>Project Two</h3>
-        <p>Short description of the project</p>
-      </article>
-      <!-- Add more if needed -->
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-icon">
+          <img src="img/profile-pic.jpg" alt="Profile image of Damian Guzman" />
+        </div>
+        <p>
+          Welcome to my portfolio! I am an <strong>aspiring developer</strong> with experience in 
+          <strong>C, C++, C#, Java, HTML, CSS, and Python</strong>. I possess 
+          <span class="highlight">strong communication</span>, <span class="highlight">adaptability</span>, 
+          and <span class="highlight">attention to detail</span> skills, with the ability to 
+          <span class="highlight">work in a fast-paced environment</span> and a 
+          <span class="highlight">willingness to learn</span>.
+        </p>
+      </div>
     </div>
-    <a class="button" href="projects.html">See All Projects</a>
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="img/html-icon.png" alt="HTML5 Icon" class="skill-icon" />
+        <span>HTML5/CSS3</span>
+      </div>
+      <div class="skill-item">
+        <img src="img/js-icon.png" alt="JavaScript Icon" class="skill-icon" />
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img src="img/csharp-icon.png" alt="C# Icon" class="skill-icon" />
+        <span>C#</span>
+      </div>
+      <div class="skill-item">
+        <img src="img/java-icon.png" alt="Java Icon" class="skill-icon" />
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <img src="img/c-icon.png" alt="C Icon" class="skill-icon" />
+        <span>C</span>
+      </div>
+      <div class="skill-item">
+        <img src="img/cpp-icon.png" alt="C++ Icon" class="skill-icon" />
+        <span>C++</span>
+      </div>
+      <div class="skill-item">
+        <img src="img/python-icon.png" alt="Python Icon" class="skill-icon" />
+        <span>Python</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-container">
+    <div class="projects-header">
+      <h2>Projects</h2>
+    </div>
+    <div class="project-gallery">
+      <div class="project-item">
+        <div class="project-image-wrapper">
+          <img src="img/project-one.png" alt="Screenshot of Project One" class="project-image" />
+        </div>
+        <h3>
+          <a href="https://github.com/damianguzman/project-one" target="_blank">Project One</a>
+        </h3>
+        <p>A brief overview of what Project One entails and its core features.</p>
+      </div>
+      <div class="project-item">
+        <div class="project-image-wrapper">
+          <img src="img/project-two.png" alt="Screenshot of Project Two" class="project-image" />
+        </div>
+        <h3>
+          <a href="https://github.com/damianguzman/project-two" target="_blank">Project Two</a>
+        </h3>
+        <p>A brief overview of what Project Two entails and its core features.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-container">
+    <h2>Get In Touch!</h2>
+    <p>Feel free to reach out via the options below:</p>
+    <div class="contact-options">
+      <a href="mailto:deg3901@gmail.com" class="contact-item">
+        <img src="img/mail-icon.png" alt="Email Icon" class="contact-icon" />
+        <span>Email</span>
+      </a>
+      <a href="https://github.com/damianguzman" target="_blank" class="contact-item">
+        <img src="img/github-icon.png" alt="GitHub Icon" class="contact-icon" />
+        <span>GitHub</span>
+      </a>
+      <a href="https://linkedin.com/in/damianeguzman" target="_blank" class="contact-item">
+        <img src="img/linkedin-icon.png" alt="LinkedIn Icon" class="contact-icon" />
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://calendly.com/damianeguzman" target="_blank" class="contact-item">
+        <img src="img/calendar-icon.png" alt="Schedule Call Icon" class="contact-icon" />
+        <span>Schedule a Call</span>
+      </a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Damian Guzman. All rights reserved.</p>
+  <footer class="footer-container">
+    <div class="footer-content">
+      <p>&copy; 2025 Damian Guzman. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:deg3901@gmail.com" class="footer-link">
+          <img src="img/mail-icon.png" alt="Email Icon" class="footer-icon" />
+        </a>
+        <a href="https://linkedin.com/in/damianeguzman" target="_blank" class="footer-link">
+          <img src="img/linkedin-icon.png" alt="LinkedIn Icon" class="footer-icon" />
+        </a>
+        <a href="https://github.com/damianguzman" target="_blank" class="footer-link">
+          <img src="img/github-icon.png" alt="GitHub Icon" class="footer-icon" />
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
