@@ -317,7 +317,7 @@ body.dark-mode .chevron-down svg {
 .about-container {
   text-align: center;
   margin: auto;
-  max-width: 700px; /* Keep max-width as is */
+  max-width: 700px;
   padding: 20px;
   border-radius: 15px;
   background-color: var(--beige);
@@ -336,7 +336,7 @@ body.dark-mode .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* Slightly reduced gap for tighter layout */
+  gap: 10px;
 }
 
 .about-icon {
@@ -359,8 +359,8 @@ body.dark-mode .about-icon {
 }
 
 .about-content p {
-  font-size: 1.05rem; /* Slightly smaller for compactness */
-  line-height: 1.6; /* Tighter line spacing */
+  font-size: 1.05rem;
+  line-height: 1.6;
   text-align: justify; /* Justify text for better alignment */
   margin: 0; /* Remove extra margin */
   color: var(--darkgrey);
@@ -440,14 +440,14 @@ body.dark-mode .skill-item {
   transform: scale(1.05); /* Slight scaling, avoids explosion */
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
   border-color: var(--beige); /* Adds visible border */
-  background-color: var(--teal); /* Maintain background */
-  color: var(--beige); /* Maintain text color */
+  background-color: var(--teal);
+  color: var(--beige);
 }
 
 body.dark-mode .skill-item:hover {
   border-color: var(--teal); /* Visible border in dark mode */
   background-color: var(--orange); /* Maintain hover consistency */
-  color: var(--teal); /* Adjust text for dark mode */
+  color: var(--teal);
 }
 
 /* Skill Icon Sizing */
@@ -459,11 +459,11 @@ body.dark-mode .skill-item:hover {
 }
 
 .skill-item span {
-  font-size: 0.8rem; /* Text sizing */
+  font-size: 0.8rem;
   font-weight: bold;
   text-align: center;
   padding: 0 5px; /* Prevent text from touching edges */
-  line-height: 1.2; /* Improve readability */
+  line-height: 1.2;
 }
 
 /* Positioning in a Circle */
@@ -514,7 +514,7 @@ body.dark-mode .skill-item:hover {
 /* Projects Section */
 .projects-container {
   background-color: var(--beige);
-  border: 4px solid var(--teal); /* Match About Me */
+  border: 4px solid var(--teal);
   border-radius: 15px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   max-width: 700px; /* Consistent width */
@@ -544,8 +544,8 @@ body.dark-mode .projects-header h2 {
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Correct dynamic layout */
-  gap: 20px; /* Reduced for proper spacing */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
   justify-content: center;
 }
 
@@ -554,8 +554,8 @@ body.dark-mode .projects-header h2 {
   padding: 10px;
   border-radius: 10px;
   width: 100%; /* Full width within the grid */
-  max-width: 300px; /* Prevents over-scaling */
-  margin: 0 auto; /* Center alignment */
+  max-width: 300px;
+  margin: 0 auto;
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -577,7 +577,7 @@ body.dark-mode .project-item {
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 15px;
-  background-color: var(--beige); /* Alt text visible in light mode */
+  background-color: var(--beige);
 }
 
 body.dark-mode .project-image-wrapper {
@@ -608,7 +608,7 @@ body.dark-mode .project-item h3 {
 
 .project-item h3 a {
   color: var(--orange); /* Light mode color */
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -709,12 +709,12 @@ body.dark-mode .contact-item {
 }
 
 .contact-icon {
-  width: 20px; /* Smaller icon */
+  width: 20px; 
   height: 20px;
 }
 
 .contact-item span {
-  font-size: 0.9rem; /* Smaller text size for compactness */
+  font-size: 0.9rem;
   font-weight: bold;
   text-align: left;
 }
@@ -738,7 +738,7 @@ body.dark-mode .footer-container {
   display: flex;
   align-items: center; /* Align icons and text vertically */
   justify-content: space-between; /* Ensure text and icons are spaced out */
-  padding: 0 15px; /* Add horizontal padding for better layout */
+  padding: 0 15px; 
   flex-wrap: wrap; /* Ensure it adjusts on smaller screens */
 }
 

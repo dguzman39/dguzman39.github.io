@@ -24,7 +24,7 @@ const projectsSection = document.querySelector("#projects");
     isDark ? "Switch to light mode" : "Switch to dark mode"
   );
 
-  // Add visual feedback for theme transition
+  // Visual feedback for theme transition
   document.body.style.transition = "background-color 0.5s ease, color 0.5s ease";
   setTimeout(() => {
     document.body.style.transition = "";
