@@ -544,17 +544,18 @@ body.dark-mode .projects-header h2 {
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Correct dynamic layout */
+  gap: 20px; /* Reduced for proper spacing */
   justify-content: center;
-  }
+}
 
 .project-item {
   background: linear-gradient(to bottom, var(--beige), var(--teal));
   padding: 10px;
   border-radius: 10px;
-  width: 300px; /* Adjusted width for better fit */
-  margin: 0;
+  width: 100%; /* Full width within the grid */
+  max-width: 300px; /* Prevents over-scaling */
+  margin: 0 auto; /* Center alignment */
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -627,6 +628,23 @@ body.dark-mode .project-item h3 a {
 
 body.dark-mode .project-item p {
   color: var(--darkgrey);
+}
+
+/* Responsive Layout Tweaks */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 20px 10px; /* Adjust padding for mobile */
+  }
+  .project-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Prevent stretching */
+  }
+  .project-item {
+    max-width: 90%; /* Reduce width to prevent stretching */
+    padding: 15px; /* Add slight padding for visual balance */
+  }
+  .project-image-wrapper {
+    height: 150px; /* Adjust height to prevent images from looking stretched */
+  }
 }
 
 /* Contact Section Styling */
@@ -816,7 +834,6 @@ body.dark-mode .back-to-top:hover {
   opacity: 1;
   visibility: visible;
 }
-
 
 /* Smooth Transition */
 body, p, h1, h2, footer, .btn, .hero, .dark-mode-toggle, .project-item {
