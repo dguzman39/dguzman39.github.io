@@ -56,15 +56,14 @@ const projectsSection = document.querySelector("#projects");
   window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // Function to check if projects section is in view
+  // Function to check visibility of projects section
   const isElementInViewport = (el) => {
     const rect = el.getBoundingClientRect();
     return rect.top <= window.innerHeight && rect.bottom >= 0;
   };
 
-  // Show or hide the back-to-top button based on projects section visibility
   window.addEventListener("scroll", () => {
-    if (isElementInViewport(projectsSection)) {
+    if (isElementInViewport(document.querySelector("#projects"))) {
       backToTopButton.classList.add("visible");
     } else {
       backToTopButton.classList.remove("visible");
