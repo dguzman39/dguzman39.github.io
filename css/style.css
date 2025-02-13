@@ -466,6 +466,81 @@ body.dark-mode .skill-item:hover {
   line-height: 1.2; /* Improve readability */
 }
 
+/* Popup Blurb Styling */
+.popup {
+  position: absolute;
+  background-color: var(--beige);
+  border: 2px solid var(--teal);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  z-index: 10;
+  max-width: 180px;
+}
+
+body.dark-mode .popup {
+  background-color: var(--teal);
+  border-color: var(--orange);
+}
+
+/* Popup positioned above the skill item */
+.popup.top {
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Popup positioned below the skill item */
+.popup.bottom {
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Content inside the popup */
+.popup-content {
+  text-align: center;
+}
+
+.popup p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--darkgrey);
+}
+
+body.dark-mode .popup p {
+  color: var(--lightgrey);
+}
+
+/* Progress Bar Styling */
+.progress-bar-container {
+  width: 100%;
+  background-color: var(--lightgrey);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+body.dark-mode .progress-bar-container {
+  background-color: var(--darkgrey);
+}
+
+.progress-bar {
+  width: 0;
+  height: 12px;
+  background-color: var(--orange);
+  transition: width 0.8s ease;
+}
+
+/* Hover Effect to Show Popup */
+.skill-item:hover .popup {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Positioning in a Circle */
 .skill-item:nth-child(1) { top: 10%; left: 50%; transform: translate(-50%, -50%); }
 .skill-item:nth-child(2) { top: 30%; left: 85%; transform: translate(-50%, -50%); }
