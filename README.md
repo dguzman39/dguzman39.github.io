@@ -59,7 +59,7 @@ project-root/
 ## Contact Information
 Feel free to reach out to me via any of the methods below:
 - **Email**: [deg3901@gmail.com](mailto:deg3901@gmail.com)
-- **GitHub**: [damianguzman](https://github.com/damianguzman)
+- **GitHub**: [Damian Guzman](https://github.com/dguzman39)
 - **LinkedIn**: [linkedin.com/in/damianeguzman](https://linkedin.com/in/damianeguzman)
 - **Schedule a Call**: [Calendly Link](https://calendly.com/damianeguzman)
 
